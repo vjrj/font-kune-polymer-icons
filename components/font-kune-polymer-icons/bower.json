@@ -1,0 +1,27 @@
+{
+  "name": "font-kune-polymer-icons",
+  "version": "0.0.3",
+  "authors": [
+    "Vicente J. Ruiz Jurado <vjrj@ourproject.org>"
+  ],
+  "description": "Polymer/core-icon compatible iconset based on Kune SVG font",
+  "main": "kune-icons.html",
+  "keywords": [
+    "Kune",
+    "Polymer",
+    "Icons",
+    "Icon Set",
+    "web-components"
+  ],
+  "dependencies": {
+    "core-icon": "Polymer/core-icon",
+    "core-iconset-svg": "Polymer/core-iconset-svg",
+    "polymer": "Polymer/polymer"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/vjrj/font-kune-polymer-icons",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ]
+}

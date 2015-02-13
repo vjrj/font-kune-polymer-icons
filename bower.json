@@ -1,0 +1,7 @@
+{
+  "name": "font-kune-polymer-icons#gh-pages",
+  "private": true,
+  "dependencies": {
+    "font-kune-polymer-icons": "vjrj/font-kune-polymer-icons#master"
+  }
+}
