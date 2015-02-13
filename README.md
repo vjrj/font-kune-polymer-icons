@@ -1,5 +1,6 @@
 
-Font Kune as a Polymer/core-iconset-svg component
+Font Kune as a Polymer/core-iconset-svg component. More info in the [documentation page](https://vjrj.github.io/font-kune-polymer-icons/components/font-kune-polymer-icons/).
+
 
 # Set Up
 
