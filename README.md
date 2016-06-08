@@ -10,7 +10,7 @@ Font Kune as a Polymer/iron-iconset-svg component. More info in the [documentati
 
 Link your custom component alongside with other Polymer dependencies
 
-    <link rel="import" href="bower_components/font-kune-polymer-icons/kune-icons.html">
+    <link rel="import" href="bower_components/font-kune-polymer-icons/font-kune-polymer-icons.html">
 
 Use the iconset
 
