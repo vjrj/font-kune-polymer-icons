@@ -1,5 +1,5 @@
 
-Font Kune as a Polymer/core-iconset-svg component. More info in the [documentation page](https://vjrj.github.io/font-kune-polymer-icons/components/font-kune-polymer-icons/).
+Font Kune as a Polymer/iron-iconset-svg component. More info in the [documentation page](https://vjrj.github.io/font-kune-polymer-icons/components/font-kune-polymer-icons/).
 
 
 # Set Up
@@ -14,7 +14,7 @@ Link your custom component alongside with other Polymer dependencies
 
 Use the iconset
 
-    <core-icon icon="kune:message"></core-icon>
+    <iron-icon icon="kune:message"></iron-icon>
 
 # Copyright 
 

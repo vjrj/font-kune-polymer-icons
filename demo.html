@@ -1,15 +1,16 @@
 <!doctype html>
 <!--
-Polymer icon set ok kune iconset 
+Polymer icon set ok kune iconset
 -->
 
 <html>
 <head>
 
   <title>Font Kune Icon Set: kune</title>
-  <script src="../webcomponentsjs/webcomponents.js"></script>
+	<script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+	<link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
   <!-- load default set -->
-  <link rel="import" href="../core-icons/core-icons.html">
+  <link rel="import" href="../iron-icons/iron-icons.html">
   <!-- load the rest -->
   <link rel="import" href="kune-icons.html">
   <style>
@@ -21,12 +22,12 @@ Polymer icon set ok kune iconset
       text-transform: capitalize;
     }
 
-    core-icon {
+    iron-icon {
       transition: all 0.2s;
       -webkit-transition: all 0.2s;
     }
 
-    core-icon:hover {
+    iron-icon:hover {
       fill: #fb8c00;
     }
 
@@ -61,25 +62,20 @@ Polymer icon set ok kune iconset
     }
   </style>
 </head>
-<body unresolved>
-  
-  <template is="auto-binding">
-    <template repeat="{{iconset in $.meta.metaArray}}">
-      <template if="{{iconset.id != 'icons'}}">
-      <h2>{{iconset.id}}</h2>
-      <h5>{{iconset.id === 'icons' ? 'The Default Set' : 'Import ' + iconset.id + '-icons.html'}}</h5>
-      <div class="set" horizontal wrap justified layout>
-        <template repeat="{{ icon in iconset.iconNames }}">
-          <span class="container" vertical center layout>
-            <core-icon icon="{{ iconset.id }}:{{ icon }}"></core-icon>
-            <div>{{ icon }}</div>
+<body>
+  <template is="dom-bind">
+    <iron-meta type="iconset" list="{{iconsets}}"></iron-meta>
+    <template is="dom-repeat" items="{{iconsets}}">
+      <h2>{{item.name}}</h2>
+      <div class="set horizontal wrap layout">
+        <template is="dom-repeat" items="{{item.iconNames}}">
+          <span class="container vertical center layout">
+            <iron-icon icon="{{item}}"></iron-icon>
+            <div>{{item}}</div>
           </span>
         </template>
       </div>
-      </template>
     </template>
-    <core-iconset id="meta"></core-iconset>
   </template>
-  
 </body>
 </html>
