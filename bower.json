@@ -1,7 +1,8 @@
 {
   "name": "font-kune-polymer-icons",
-  "version": "0.1.0",
-  "authors": [
+  "private": true,
+  "version": "2.0.0",
+  "author": [
     "Vicente J. Ruiz Jurado <vjrj@ourproject.org>"
   ],
   "description": "Polymer/iron-icon compatible iconset based on Kune SVG font",
@@ -14,24 +15,30 @@
     "web-components"
   ],
   "dependencies": {
-    "iron-icon": "PolymerElements/iron-icon#~1",
-    "iron-icons": "PolymerElements/iron-icons#~1",
-    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#~1",
-    "polymer": "~1",
-    "iron-component-page": "^1.1.6"
+    "polymer": "Polymer/polymer#1 - 2",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#1 - 2",
+    "iron-meta": "PolymerElements/iron-meta#1 - 2",
+    "iron-icon": "PolymerElements/iron-icon#1 - 2"
   },
-    "devDependencies": {
-        "paper-styles": "polymerelements/paper-styles#^1.0.2",
-        "iron-component-page": "polymerelements/iron-component-page#1.0.0",
-        "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
-        "iron-meta": "polymerelements/iron-meta#^1.0.0",
-        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
-        "web-component-tester": "^4.0.0"
-    },
+  "devDependencies": {
+    "paper-styles": "polymerelements/paper-styles#1 - 2",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#1 - 2",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#1 - 2",
+    "iron-flex-layout": "polymerelements/iron-flex-layout#1 - 2",
+    "iron-meta": "polymerelements/iron-meta#1 - 2",
+    "iron-icons": "PolymerElements/iron-icons#1 - 2",
+    "iron-component-page": "polymerelements/iron-component-page#1 - 2",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "web-component-tester": "^6.0.0"
+  },
   "license": "MIT",
   "homepage": "https://github.com/vjrj/font-kune-polymer-icons",
   "ignore": [
     "**/.*",
     "bower_components"
-  ]
+  ],
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.0",
+    "polymer": "^2.0.1"
+  }
 }
